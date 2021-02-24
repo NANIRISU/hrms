@@ -1,2 +1,7 @@
 @import './theme';   // this is color file for entire project 
-@import "../component/dashboardLayout/dashboard.scss";  // this dashboard  style page 
+// here gloabl level apply 
+@import "./common";
+@import './typography';
+
+// Component level applied
+@import "../component/dashboardLayout/dashboardLayout.scss";  // this dashboard  style page 

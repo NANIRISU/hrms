@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../../component/header/Header';
 
  function Calendar() {
   return (
-    <div>
-        here Calendar
+    <div className="calendar">
+        <Header pageHeader="Calendar"/>
         
     </div>
   );

@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../../component/header/Header';
 
  function Onboarding() {
   return (
-    <div>
-     hello Onboarding
+    <div className="Onboarding">
+      <Header pageHeader="Onboarding"/>
     </div>
   );
 }

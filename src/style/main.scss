@@ -3,5 +3,13 @@
 @import "./common";
 @import './typography';
 
-// Component level applied
-@import "../component/dashboardLayout/dashboardLayout.scss";  // this dashboard  style page 
+// Component level applied//
+@import "../component/dashboardLayout/dashboardLayout.scss";  // this dashboard  style page //
+
+@import "../component/header/header";
+@import '../component/input//input';
+@import "../component//avatar/avatar";
+
+//screen
+
+@import "../screen/home/home";

@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../../component/header/Header';
 
  function Settings() {
   return (
-    < div>
-      here settings
+    < div className="settings">
+      <Header pageHeader="Settings"/>
     </ div>
   );
 }

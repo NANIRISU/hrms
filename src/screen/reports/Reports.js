@@ -1,9 +1,9 @@
 import React from 'react';
-
+import Header from '../../component/header/Header';
  function Reports() {
   return (
-    < div>
-     here Reports
+    < div className="reports">
+    <Header pageHeader="Reports"/>
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react';
+import Header from '../../component/header/Header';
 
  function Recruitment() {
   return (
-    <div>
-     hello recruitment
+    <div className="recruitment">
+     <Header pageHeader="Recruitment"/>
     </div>
   );
 }

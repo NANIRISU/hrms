@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../component/header/Header';
+import authenticate from '../../hoc/authentication';
 
  function Recruitment() {
   return (
@@ -9,4 +10,4 @@ import Header from '../../component/header/Header';
   );
 }
 
-export default Recruitment;
+export default authenticate(Recruitment);

@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Header from '../../component/header/Header';
-
- function Home() {
+import authenticate from '../../hoc/authentication'
+ function Home(props) {
+ 
   return (
     <div className="home">
        <Header pageHeader="Dashboard"/>
@@ -9,4 +10,4 @@ import Header from '../../component/header/Header';
     </div>
   );
 }
-export default Home;
+export default authenticate(Home);

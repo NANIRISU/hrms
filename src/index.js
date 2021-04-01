@@ -5,6 +5,7 @@ import './style/main.scss'
 // import reportWebVitals from './reportWebVitals';
 import Controller from './Controller';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Controller/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../component/header/Header';
+import authenticate from '../../hoc/authentication';
  function Reports() {
   return (
     < div className="reports">
@@ -8,4 +9,4 @@ import Header from '../../component/header/Header';
   );
 }
 
-export default Reports;
+export default authenticate(Reports);

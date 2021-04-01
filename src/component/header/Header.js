@@ -12,7 +12,8 @@ const Header =({pageHeader})=>{
          <h1>{pageHeader}</h1>
       </div>
      <div style={{display:"flex",justifyContent:"space-between",width:"50%"}}>
-     <div className="action-container">
+       {/* when i need i will uncomment it  becuase of i done for authentication */}
+     {/* <div className="action-container">
         <Input placeholder="Search...." icon={<FiSearch />} classes={{inputComponentClass:"hover-action"}} />
         <IoSendOutline className="action-icon"/>
         <IoNotificationsOutline className="action-icon"/>
@@ -20,7 +21,7 @@ const Header =({pageHeader})=>{
       <div className="profile-container">
           <label>saikrishna</label>
           <Avatar/>
-      </div>
+      </div> */}
      </div>
     </header>
     )

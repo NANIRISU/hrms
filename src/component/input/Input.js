@@ -16,6 +16,11 @@ const Input = ({
   classes = {...defaultClasses},
   placeholder,
   onChange,
+  onFocus=()=>{},
+  onBlur=()=>{},
+  errors
+
+
 }) => {
   const {
     inputClassName,
@@ -25,6 +30,7 @@ const Input = ({
     inputIconContainer,
   } = classes;
   return (
+    <Fragment>
     <div className={`input-component ${inputComponentClass}`}>
       {label && <label className={`label ${labelClassName}`}>{label}</label>}
       <div className={`input-icon-container ${inputIconContainer}`}>
@@ -36,10 +42,15 @@ const Input = ({
           placeholder={placeholder}
           value={value}
           name={name}
+          onFocus={onFocus}
+          onBlur={onBlur}
         />
         {icon}
       </div>
+      
     </div>
+    {errors && <p className="input-error">{errors}</p>}
+    </Fragment>
   );
 };
 

@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Header from '../../component/header/Header';
 import authenticate from '../../hoc/authentication'
- function Home(props) {
+ function Home() {
  
   return (
     <div className="home">

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import DashboardLayout from './component/dashboardLayout/DashboardLayout';
 import Home from './screen/home/Home';
@@ -14,7 +14,7 @@ import Login from './screen/login/Login';
      return(
         <BrowserRouter >
         <Switch>
-        <Route path="/login" render={(props)=><Login {...props}  />}/>
+        <Route path="/login" render={(props)=><Login {...props}/>}/>
         <DashboardLayout>
             <Route exact path="/" render={(props)=><Home {...props} />}/>
             <Route path ="/recruitment" render={(props)=><Recruitment {...props}/>}/>

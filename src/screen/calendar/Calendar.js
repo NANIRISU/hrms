@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../../component/header/Header';
+import authenticate from '../../hoc/authentication';
 
  function Calendar() {
   return (
@@ -9,4 +10,4 @@ import Header from '../../component/header/Header';
     </div>
   );
 }
-export default  Calendar;
+export default authenticate(Calendar);

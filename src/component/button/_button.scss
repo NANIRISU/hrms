@@ -1,0 +1,13 @@
+.new-button{
+    min-width: 200px;
+    padding: 8px;
+    border-radius: 24px;
+    font-weight: 700;
+    &.--primary{
+        background: $hr_accent ;
+        color:$hr_gray5 ;
+        &:hover{
+            background: darken($color: $hr_gray1, $amount: 0.5);
+        }
+    }
+}

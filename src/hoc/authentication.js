@@ -1,10 +1,17 @@
-function authenticate(component){
-    const accessToken=localStorage.getItem('Access-token')
+import DashboardLayout from "../component/dashboardLayout/DashboardLayout"
 
-    // apy - validate the tokend
+function authenticate(component){
+    const accessToken=localStorage.getItem('Access-Token')
+
+    // api - validate the token
     const isLoggedIn=accessToken ? true :  false
     if (isLoggedIn){
         return component
+        // ()=>(
+        //     <DashboardLayout>
+        //        <component/>
+        //     </DashboardLayout>
+        // )
       
     }
     else
